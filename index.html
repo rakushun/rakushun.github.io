@@ -7,8 +7,6 @@
     <meta name=”keywords” content=”Webアプリ,techacademy,サンプル”>
     <meta name=”description” content=”Webアプリ開発勉強過程でできたサンプルを公開中”>
     <title>Webアプリサンプル</title>
-    <!--CSS読み込み-->
-    <link rel="stylesheet" href="design.css" />
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -21,11 +19,11 @@
     <section>
       <div class="info">
         <h3 id="info">自己紹介</h3>
-        <table border=1>
+        <table>
           <tr><td rowspan=4><img src="dog2.jpg" alt="" /></td><td>氏名</td><td>新山　耕司</td></tr>
           <tr><td>近況</td><td>Webアプリ開発の勉強中</td></tr>
           <tr><td>HP</td><td><a href="https://rakushun.github.io">https://rakushun.github.io/</td></tr>
-          <tr><td>GitHub</td><a href="https://github.com/rakushun">https://github.com/rakushun</a></td>
+          <tr><td>GitHub</td><td><a href="https://github.com/rakushun">https://github.com/rakushun</td></tr>
         </table>
       </div>
     </section>
@@ -33,40 +31,63 @@
     <section>
       <div class="list">
         <h3 id="list">開発アプリ一覧</h3>
-      <table border=1>
-        <tr><td rowspan=３>イメージ画像</td><td>概要</td><td>複数名でメッセージを書き込み情報を共有するWebアプリ</td>
-        <tr><td>進捗</td><td>未着手</td>
-        <tr><td>リンク</td><td><a href="http://">None</td>
-        </tr>
-      </table>
-      <section>
-      　<!--メッセージボード-->
-    　　<h3 id="message bordered">開発アプリ１：メッセージボード</h3>
-    　　<p>概要：複数名でメッセージを書き込み情報を共有するWebアプリ</p>
-    　　<p>進捗：未着手</p>
-    　  <img src="Tokyo2.jpg" alt="" />
-    　  <!--メッセージボード：ここまで-->
-        <!--ツイッタークローン-->
-    　　<h3 id="TwitterClone">開発アプリ２：ツイッタークローン</h3> 
-    　　<p>概要：ツイッターのようなWebアプリ</p>
-    　　<p>進捗：未着手</p>
-    　　<!--ツイッタークローン：ここまで-->
-    　　<!--モノリスト-->
-    　  <img src="Tokyo2.jpg" alt="" />
-    　　<h3 id="MonoList">開発アプリ３：モノリスト</h3>  
-    　　<p>概要：通販サイトのようなWebアプリ</p>
-    　　<p>進捗：未着手</p>
-    　  <img src="Tokyo2.jpg" alt="" />
-    　  <!--モノリスト：ここまで-->
-    　  <!--オリジナルアプリ-->
-    　　<h3 id="OrgApp">開発アプリ４：オリジナルアプリ</h3>  
-    　　<p>進捗：未着手</p>
-    　  <img src="Tokyo2.jpg" alt="" />
-    　  <!--オリジナルアプリ：ここまで-->
-      </section>
-      <footer>
-        <p>&copy; 2016 WebAppExample.Co.,Ltd.</p>
-      </footer>
-    </div>
+        <table class="table-list">
+          <tr><td>進捗</td><td>アプリ名</td><td>説明</td></tr>
+          <tr><td>未着手</td><td><a href="#msg">メッセージボード</a></td><td>複数名でメッセージを書き込み情報を共有するWebアプリ</td></tr>
+          <tr><td>未着手</td><td><a href="#twitter">Twitterクローン</a></td><td>Twitterのようなアプリ</td></tr>
+          <tr><td>未着手</td><td><a href="#monolist">モノリスト</a></td><td>AmazoneのAPIを使って商品を検索するアプリ</td></tr>
+          <tr><td>未着手</td><td><a href="#org">オリジナルアプリ</a></td><td>勉強したことを元に作ったオリジナルアプリ</td></tr>
+        </table>
+        <a href="#info">Top</a>
+      </div>
+    </section>
+    <!--メッセージボード(msg)-->
+    <section>
+      <div class="msg">
+        <h3 id="msg">メッセージボード</h3>
+        <table class="table-apps">
+          <tr><td rowspan=3>サンプル<br>画像<!--<img src="dog2.jpg" alt="" />--></td><td>概要</td><td>複数名でメッセージを書き込み情報を共有するWebアプリ</td></tr>
+          <tr><td>進捗</td><td>未着手</td></tr>
+          <tr><td>リンク</td><td><!--<a href="http://">-->None</td></tr>
+        </table>
+        <a href="#info">Top</a>
+      </div>
+    </section>
+    <!--Twitterクローン(twitter)-->
+    <section>
+      <div class="twitter">
+        <h3 id="twitter">Twitterクローン</h3>
+        <table class="table-apps">
+          <tr><td rowspan=3>サンプル<br>画像<!--<img src="dog2.jpg" alt="" />--></td><td>概要</td><td>Twitterのようなアプリ</td></tr>
+          <tr><td>進捗</td><td>未着手</td></tr>
+          <tr><td>リンク</td><td><!--<a href="http://">-->None</td></tr>
+        </table>
+        <a href="#info">Top</a>
+      </div>
+    </section>
+    <!--モノリスト(monolist)-->
+    <section>
+      <div class="monolist">
+        <h3 id="monolist">モノリスト</h3>
+        <table class="table-apps">
+          <tr><td rowspan=3>サンプル<br>画像<!--<img src="dog2.jpg" alt="" />--></td><td>概要</td><td>AmazoneのAPIを使って商品を検索するアプリ</td></tr>
+          <tr><td>進捗</td><td>未着手</td></tr>
+          <tr><td>リンク</td><td><!--<a href="http://">-->None</td></tr>
+        </table>
+        <a href="#info">Top</a>
+      </div>
+    </section>
+    <!--オリジナルアプリ(org)-->
+    <section>
+      <div class="org">
+        <h3 id="org">オリジナルアプリ</h3>
+        <table class="table-apps">
+          <tr><td rowspan=3>サンプル<br>画像<!--<img src="dog2.jpg" alt="" />--></td><td>概要</td><td>勉強したことを元に作ったオリジナルアプリ</td></tr>
+          <tr><td>進捗</td><td>未着手</td></tr>
+          <tr><td>リンク</td><td><!--<a href="http://">-->None</td></tr>
+        </table>
+        <a href="#info">Top</a>
+      </div>
+    </section>
   </body>
 </html>
