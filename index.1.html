@@ -7,8 +7,6 @@
     <meta name=”keywords” content=”Webアプリ,techacademy,サンプル”>
     <meta name=”description” content=”Webアプリ開発勉強過程でできたサンプルを公開中”>
     <title>Webアプリサンプル</title>
-    <!--CSS読み込み-->
-    <link rel="stylesheet" href="design.css" />
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -17,29 +15,29 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <!--自己紹介(info)-->
-    <section>
-      <div class="info">
-        <h3 id="info">自己紹介</h3>
-        <table border=1>
-          <tr><td rowspan=4><img src="dog2.jpg" alt="" /></td><td>氏名</td><td>新山　耕司</td></tr>
-          <tr><td>近況</td><td>Webアプリ開発の勉強中</td></tr>
-          <tr><td>HP</td><td><a href="https://rakushun.github.io">https://rakushun.github.io/</td></tr>
-          <tr><td>GitHub</td><a href="https://github.com/rakushun">https://github.com/rakushun</a></td>
-        </table>
-      </div>
-    </section>
-    <!--開発アプリ一覧(list)-->
-    <section>
-      <div class="list">
-        <h3 id="list">開発アプリ一覧</h3>
-      <table border=1>
-        <tr><td rowspan=３>イメージ画像</td><td>概要</td><td>複数名でメッセージを書き込み情報を共有するWebアプリ</td>
-        <tr><td>進捗</td><td>未着手</td>
-        <tr><td>リンク</td><td><a href="http://">None</td>
-        </tr>
-      </table>
+        <div class="header">
+    <div class="menu">
+      <ul>
+        <li><a href="#index.html">Home</a></li>
+        <li><a href="#about">自己紹介</a></li>
+        <li><a href="#message bordered">メッセージボード</a></li>
+        <li><a href="#TwitterClone">Twitterクローン</a></li>
+        <li><a href="#MonoList">モノリスト</a></li>
+        <li><a href="#OrgApp">オリジナルアプリ</a></li>
+        <li><a href="https://rakushun.github.io">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="container">
       <section>
+        <h3 id="about">自己紹介</h3>
+    　　<img src="dog2.jpg" alt="" />
+    　　<!-- 自己紹介：表にして項目と値を揃える-->
+        <p>氏名：新山　耕司</p>
+        <p>出身地：北海道</p>
+        <p>近況：Webアプリ開発を勉強中</p>
+        <p><a href="https://rakushun.github.io">GitHub：https://rakushun.github.io</a></p>
+      　<!--自己紹介：ここまで-->
       　<!--メッセージボード-->
     　　<h3 id="message bordered">開発アプリ１：メッセージボード</h3>
     　　<p>概要：複数名でメッセージを書き込み情報を共有するWebアプリ</p>
