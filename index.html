@@ -15,91 +15,179 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <!-- スタイルシート -->
+    <style>
+      .information > div {
+	      border: 1px solid gray;  
+      }
+    </style>
+    <section>
     <!--自己紹介(info)-->
-    <section>
       <div class="info">
-        <h3 id="info">自己紹介</h3>
-        <table border=1>
-          <tr><td rowspan=4 width="120" align=center><img src="dog2.jpg" alt="" /></td><td width="80">氏名</td><td width="300">新山　耕司</td></tr>
-          <tr><td>近況</td><td>Webアプリ開発の勉強中</td></tr>
-          <tr><td>HP</td><td><a href="https://rakushun.github.io">https://rakushun.github.io/</td></tr>
-          <tr><td>GitHub</td><td><a href="https://github.com/rakushun">https://github.com/rakushun</td></tr>
-        </table>
+      <h3 id="info">自己紹介</h3>
+      <img src="dog2.jpg" alt="" />
+        <div class="container-fluid">
+          <div class="row information">
+            <div class="col-md-1">氏名</div>
+		        <div class="col-md-3">新山　耕司</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">近況</div>
+		        <div class="col-md-3">Webアプリ開発の勉強中</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">HP</div>
+		        <div class="col-md-3"><a href="https://rakushun.github.io">https://rakushun.github.io</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">GitHub</div>
+		        <div class="col-md-3"><a href="https://github.com/rakushun">https://github.com/rakushun</div>
+		      </div>
+        </div>
       </div>
     </section>
+    
+    <section>
     <!--開発アプリ一覧(list)-->
-    <section>
       <div class="list">
-        <h3 id="list">開発アプリ一覧</h3>
-        <table border=1>
-          <tr><td width="50" align=center>進捗</td><td width="200">アプリ名</td><td width="300">説明</td></tr>
-          <tr><td align=center>未着手</td><td><a href="#msg">メッセージボード</a></td><td width="300">複数名でメッセージを書き込み情報を共有するWebアプリ</td></tr>
-          <tr><td align=center>未着手</td><td><a href="#twitter">Twitterクローン</a></td><td width="300">Twitterのようなアプリ</td></tr>
-          <tr><td align=center>未着手</td><td><a href="#amazon">モノリスト[Amazone API]</a></td><td width="300">AmazonのProduct Advertising APIを用いてAmazonの商品を検索し、自分が持っているもの・欲しい物を共有するサービス</td></tr>
-          <tr><td align=center>未着手</td><td><a href="#org">オリジナルサービス</a></td><td width="300">勉強したことを元に作ったオリジナルサービス</td></tr>
-          <tr><td align=center>未着手</td><td><a href="#rakuten">モノリスト[楽天API]</a></td><td width="300">楽天の楽天ウェブサービスを用いて楽天市場の商品を検索し、自分が持っているもの・欲しい物を共有するサービス</td></tr>
-        </table>
-        <a href="#info">Top</a>
+      <h3 id="list">開発アプリ一覧</h3>
+        <div class="container-fluid">
+          <div class="row information">
+		        <div class="col-md-1">進捗</div>
+		        <div class="col-md-2">アプリ名</div>
+		        <div class="col-md-7">説明</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">未着手</div>
+		        <div class="col-md-2"><a href="#msg">メッセージボード</a></div>
+		        <div class="col-md-7">複数名でメッセージを書き込み情報を共有するWebアプリ</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">未着手</div>
+		        <div class="col-md-2"><a href="#twitter">Twitterクローン</a></div>
+		        <div class="col-md-7">Twitterのようなアプリ</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">未着手</div>
+		        <div class="col-md-2"><a href="#amazon">モノリスト[Amazone API]</a></div>
+		        <div class="col-md-7">AmazonのAPIを用いてAmazonの商品を検索し、自分が持っているもの・欲しい物を共有するサービス</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">未着手</div>
+		        <div class="col-md-2"><a href="#org">オリジナルサービス</a></div>
+		        <div class="col-md-7">勉強したことを元に作ったオリジナルサービス</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">未着手</div>
+		        <div class="col-md-2"><a href="#rakuten">モノリスト[楽天API]</a></div>
+		        <div class="col-md-7">楽天の楽天ウェブサービスを用いて楽天市場の商品を検索し、自分が持っているもの・欲しい物を共有するサービス</div>
+		      </div>
+        </div>
       </div>
     </section>
+    <section>
     <!--メッセージボード(msg)-->
-    <section>
       <div class="msg">
-        <h3 id="msg">メッセージボード</h3>
-        <table border=1>
-          <tr><td rowspan=3 width="200">サンプル画像<!--<img src="dog2.jpg" alt="" />--></td><td width="50">概要</td><td width="250">複数名でメッセージを書き込み情報を共有するWebアプリ</td></tr>
-          <tr><td>進捗</td><td>未着手</td></tr>
-          <tr><td>リンク</td><td><!--<a href="http://">-->None</td></tr>
-        </table>
-        <a href="#info">Top</a>
+      <h3 id="msg">メッセージボード</h3>
+      <!-- <img src="dog2.jpg" alt="" /> -->
+        <div class="container-fluid">
+          <div class="row information">
+            <div class="col-md-1">概要</div>
+		        <div class="col-md-9">None</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">進捗</div>
+		        <div class="col-md-9">未着手</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">リンク</div>
+		        <div class="col-md-9"><!--<a href="http://">-->None</div>
+		      </div>
+        </div>
       </div>
     </section>
+    <section>
     <!--Twitterクローン(twitter)-->
-    <section>
       <div class="twitter">
-        <h3 id="twitter">Twitterクローン</h3>
-        <table border=1>
-          <tr><td rowspan=3 width="200">サンプル画像<!--<img src="dog2.jpg" alt="" />--></td><td width="50">概要</td><td width="250">Twitterのようなアプリ</td></tr>
-          <tr><td>進捗</td><td>未着手</td></tr>
-          <tr><td>リンク</td><td><!--<a href="http://">-->None</td></tr>
-        </table>
-        <a href="#info">Top</a>
+      <h3 id="twitter">Twitterクローン</h3>
+      <!-- <img src="dog2.jpg" alt="" /> -->
+        <div class="container-fluid">
+          <div class="row information">
+            <div class="col-md-1">概要</div>
+		        <div class="col-md-9">None</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">進捗</div>
+		        <div class="col-md-9">未着手</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">リンク</div>
+		        <div class="col-md-9"><!--<a href="http://">-->None</div>
+		      </div>
+        </div>
       </div>
     </section>
+        <section>
     <!--モノリスト[Amazon API](amazon)-->
-    <section>
       <div class="amazon">
-        <h3 id="amazon">モノリスト[Amazon API]</h3>
-        <table border=1>
-          <tr><td rowspan=3 width="200">サンプル画像<!--<img src="dog2.jpg" alt="" />--></td><td width="50">概要</td><td width="250">AmazoneのAPIを使って商品を検索するアプリ</td></tr>
-          <tr><td>進捗</td><td>未着手</td></tr>
-          <tr><td>リンク</td><td><!--<a href="http://">-->None</td></tr>
-        </table>
-        <a href="#info">Top</a>
+      <h3 id="amazon">モノリスト[Amazon API]</h3>
+      <!-- <img src="dog2.jpg" alt="" /> -->
+        <div class="container-fluid">
+          <div class="row information">
+            <div class="col-md-1">概要</div>
+		        <div class="col-md-9">None</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">進捗</div>
+		        <div class="col-md-9">未着手</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">リンク</div>
+		        <div class="col-md-9"><!--<a href="http://">-->None</div>
+		      </div>
+        </div>
       </div>
     </section>
+    <section>
     <!--オリジナルサービス(org)-->
-    <section>
       <div class="org">
-        <h3 id="org">オリジナルサービス</h3>
-        <table border=1>
-          <tr><td rowspan=3 width="200">サンプル画像<!--<img src="dog2.jpg" alt="" />--></td><td width="50">概要</td><td width="250">勉強したことを元に作ったオリジナルアプリ</td></tr>
-          <tr><td>進捗</td><td>未着手</td></tr>
-          <tr><td>リンク</td><td><!--<a href="http://">-->None</td></tr>
-        </table>
-        <a href="#info">Top</a>
+      <h3 id="org">オリジナルサービス</h3>
+      <!-- <img src="dog2.jpg" alt="" /> -->
+        <div class="container-fluid">
+          <div class="row information">
+            <div class="col-md-1">概要</div>
+		        <div class="col-md-9">None</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">進捗</div>
+		        <div class="col-md-9">未着手</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">リンク</div>
+		        <div class="col-md-9"><!--<a href="http://">-->None</div>
+		      </div>
+        </div>
       </div>
     </section>
-    <!--モノリスト[楽天API](rakuten)-->
     <section>
+    <!--モノリスト[楽天API](rakuten)-->
       <div class="rakuten">
-        <h3 id="rakuten">モノリスト[楽天API]</h3>
-        <table border=1>
-          <tr><td rowspan=3 width="200">サンプル画像<!--<img src="dog2.jpg" alt="" />--></td><td width="50">概要</td><td width="250">楽天の楽天ウェブサービスを用いて楽天市場の商品を検索し、自分が持っているもの・欲しい物を共有するサービスリ</td></tr>
-          <tr><td>進捗</td><td>未着手</td></tr>
-          <tr><td>リンク</td><td><!--<a href="http://">-->None</td></tr>
-        </table>
-        <a href="#info">Top</a>
+      <h3 id="org">モノリスト[楽天API]</h3>
+      <!-- <img src="dog2.jpg" alt="" /> -->
+        <div class="container-fluid">
+          <div class="row information">
+            <div class="col-md-1">概要</div>
+		        <div class="col-md-9">None</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">進捗</div>
+		        <div class="col-md-9">未着手</div>
+		      </div>
+		      <div class="row information">
+		        <div class="col-md-1">リンク</div>
+		        <div class="col-md-9"><!--<a href="http://">-->None</div>
+		      </div>
+        </div>
       </div>
     </section>
   </body>
